@@ -1,0 +1,91 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    text-align:center;
+    background:url("http://dash.ga.co/assets/jeff-bg.png");
+    background-size: cover;
+    color:white;
+}
+
+button{
+    background: red;
+    border: none;
+    color:white;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+a{
+    color:white; 
+}
+
+h1{
+    font-size: 70px; 
+}
+
+img{
+    margin: 40px 0px 0px 0px;
+    border: 7px solid white !important;
+    border-radius: 30px;
+}   
+
+ul{
+    padding: 10px; 
+    background: rgba(0, 0, 0, 0.5);
+}
+
+a{
+   text-decoration: none; 
+}
+
+li{
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+article{
+    margin: 0 auto;
+    max-width: 500px;
+    padding:20px;
+}   
+
+@media (max-width:500px){
+    h1{
+        font-size: 36px;
+      }
+      
+      li{
+        display: block;
+        padding: 5px;
+      } 
+}  
